@@ -10,9 +10,10 @@ class IncitefulApp < Sinatra::Base
   end
 
   get '/' do
-    haml :index
+    haml :entry
   end
 
-  post '/text' do
+  put '/text' do
+    puts "hello"
   end
 end

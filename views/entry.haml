@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Inciteful Manuscript Analyzer
+  %body
+    %h1 inCiteful
+    %form{:action => '/text', :method => 'post'}
+      %label{:for => ''} Paste in the text of your manuscript
+      %p
+      %textarea{:rows => '10', :cols => '100', :name => "manuscript", :id => "manuscript_memo"}
