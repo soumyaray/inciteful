@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title inCiteful Analysis Results
+  %body
+    %h2 Analysis Results
+    %h3 Top Papers
+    = @top_cite
+    %h3 All Papers
+    -# %table
+    -#   %tbody
+    - @cites.each do |cite, _cnt|
+      = cite+'<br>'
