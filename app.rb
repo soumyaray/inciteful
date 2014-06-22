@@ -14,6 +14,7 @@ class IncitefulApp < Sinatra::Base
   end
 
   post '/text' do
-    puts "hello"
+    contents = params[:manuscript]
+    puts PaperCitations.unique_cites(contents)
   end
 end
