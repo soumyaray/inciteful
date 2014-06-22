@@ -13,7 +13,7 @@ class IncitefulApp < Sinatra::Base
     haml :entry
   end
 
-  put '/text' do
+  post '/text' do
     puts "hello"
   end
 end

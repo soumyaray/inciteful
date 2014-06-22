@@ -7,4 +7,6 @@
     %form{:action => '/text', :method => 'post'}
       %label{:for => ''} Paste in the text of your manuscript
       %p
-      %textarea{:rows => '10', :cols => '100', :name => "manuscript", :id => "manuscript_memo"}
+      %textarea{:rows => '10', :cols => '100', :name => 'manuscript', :id => 'manuscript_text'}
+      %p
+      %input{:type => 'submit', :name => 'analyze', :id => 'submit_btn'}
