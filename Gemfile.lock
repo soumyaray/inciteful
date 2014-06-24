@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     citesight (0.1.0)
+    haml (4.0.5)
+      tilt
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -16,4 +18,5 @@ PLATFORMS
 
 DEPENDENCIES
   citesight
+  haml
   sinatra
