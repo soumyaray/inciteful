@@ -3,7 +3,7 @@ require 'citesight'
 require 'haml'
 
 class IncitefulApp < Sinatra::Base
-  use Rack::Session::Pool, :expire_after => 2592000
+  use Rack::Session::Pool, expire_after: 2_592_000
 
   configure :development, :production do
     enable :logging
@@ -27,7 +27,7 @@ class IncitefulApp < Sinatra::Base
   end
 
   def sorted_decreasing(cites)
-    cites.sort_by { |_c, count| count}.reverse
+    cites.sort_by { |_c, count| count }.reverse
   end
 
   def get_first_cite(cites)
